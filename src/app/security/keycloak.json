@@ -1,0 +1,7 @@
+{
+  "realm": "demo",
+  "auth-server-url": "https://secure-sso-demo-rhsso.e4ff.pro-eu-west-1.openshiftapps.com/auth",
+  "ssl-required": "external",
+  "resource": "movies-frontend",
+  "public-client": true
+}
