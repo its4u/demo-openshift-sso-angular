@@ -8,5 +8,7 @@ import { KeycloakService } from './app/security/keycloak.service';
 
 KeycloakService.init()
    .then(() => platformBrowserDynamic().bootstrapModule(AppModule))
-   .catch(e => window.location.reload());
-   
+   .catch(e => {
+       return console.log(e);
+       // window.location.reload();
+   });

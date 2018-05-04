@@ -14,6 +14,7 @@ var env = process.env.ENVIRONMENT;
 
 var server = express();
 server.use(express.static(__dirname + '/src'));
+server.use('/node_modules', express.static(__dirname + '/node_modules'));
 server.set('views', __dirname + '/src');
 server.set('port', port);
 //server.engine('html', ejs.renderFile);

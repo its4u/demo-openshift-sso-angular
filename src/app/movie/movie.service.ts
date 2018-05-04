@@ -2,9 +2,8 @@ import { Injectable }    from '@angular/core';
 import { Http, RequestOptionsArgs, Response, RequestOptions, Headers, ResponseOptions } from '@angular/http';
 import { KeycloakService } from '../security/keycloak.service';
 
-import 'rxjs/add/operator/toPromise';
-
 import { Movie } from './movie';
+import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class MovieService {

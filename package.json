@@ -4,9 +4,10 @@
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "main": "server.js",
   "scripts": {
-	"prestart": "npm run build",
+    "test": "echo \"No test specified for demonstration\" && exit 0",
     "start": "node server.js",
-    "build": "tsc -p src/"
+    "compile-start": "tsc node server.js",
+	"postinstall": "tsc -p src/"
   },
   "keywords": [],
   "author": "",
@@ -23,8 +24,10 @@
     "core-js": "^2.4.1",
     "express": "^4.14.1",
     "http-proxy": "^1.16.2",
+	"plugin-typescript": "5.2.7",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
+	"typescript": "~2.0.10",
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
@@ -43,8 +46,7 @@
     "lodash": "^4.16.4",
     "protractor": "~4.0.14",
     "rimraf": "^2.5.4",
-    "tslint": "^3.15.1",
-    "typescript": "~2.0.10"
+    "tslint": "^3.15.1"
   },
   "repository": {}
 }
